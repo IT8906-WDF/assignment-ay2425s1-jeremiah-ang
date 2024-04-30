@@ -10,7 +10,7 @@ export default function Todo(props) {
 
     return (
         <div>
-            <h1>{props.title}</h1>
+            <h1 style={{ color: 'red' }}>{props.title}</h1>
             <p>{emoji}</p>
         </div>
     );
