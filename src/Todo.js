@@ -9,9 +9,11 @@ export default function Todo(props) {
     }
 
     return (
-        <div>
-            <h1 style={{ color: 'red' }}>{props.title}</h1>
+        <div onClick={props.onDelete}>
+            <h1>{props.title}</h1>
             <p>{emoji}</p>
+            <img src={props.imageUrl} />
+            <button>Mark as DONE!</button>
         </div>
     );
 }
